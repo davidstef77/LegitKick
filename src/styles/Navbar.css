@@ -1,0 +1,33 @@
+.button-container {
+  display: flex;
+  background-color: black;
+  margin-top: 0;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+li{
+  outline: 0 !important;
+  border: 0 !important;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+li:hover {
+  transform: translateY(-3px);
+}
+
+
+@media only screen and (max-width: 600px) {
+  li {
+    margin-top: -40px !important;
+  }
+}

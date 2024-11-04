@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Mountain Bike",
+        "description": "Durable mountain bike for off-road trails.",
+        "price": 1200,
+        "image": "https://example.com/images/mountain-bike.jpg",
+        "category": "New Release",
+        "instagramLink": "https://instagram.com/yourprofile"
+    },
+    {
+      "id": 2,
+      "name": "Jordan 1 High",
+      "description": "",
+      "price": 100,
+      "image": "https://warsawsneakerstore.com/storage/media/f1000/2023/jordan/217404/jordan-brand-air-jordan-1-high-og-skyline-dx0054-805-641478ba8be3c.jpg",
+      "category": "New Release",
+      "instagramLink": "https://instagram.com/yourprofile"
+  }
+    
+    
+]

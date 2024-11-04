@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  
+  box-sizing: border-box;
+}
+
+/* Responsive hero section */
+.hero {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../assets/pexels-willy-mendez-1669648805-27862760.jpg') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 20px 0;
+  line-height: 1.5;
+}
+
+/* Responsive Navbar */
+.button-container {
+  display: flex;
+  width: 100%;
+  background-color: black;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+li {
+  overflow: hidden;
+  margin: 0 20px;
+  outline: 0 !important;
+  border: 0 !important;
+  height: 40px;
+  padding: 40px;
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+li:hover {
+  transform: translateY(-3px);
+}
+
+/* Center logo in Navbar */
+.logo-center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 80px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 10px;
+  background-color: black;
+  color: white;
+}
+
+footer p {
+  padding: 20px;
+}
+
+footer h2 {
+  font-size: 2rem;
+}
+
+/* Social Icons */
+.SocialIcons .icon {
+  margin-right: 20px;
+}
+
+.SocialIcons .icon:last-child {
+  margin-right: 0;
+}
+
+/* Button Styles */
+button {
+  font-size: 1.4em;
+  padding: 0.6em 0.8em;
+  border-radius: 0.2em;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px #000000b4;
+}
+
+button:hover {
+  opacity: 60%;
+}
+
+/* Categories Section */
+.categories {
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 1.5rem;
+}
+
+.categories h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: #333;
+}
+
+/* Product Grid */
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.product-card h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #222;
+  margin: 1rem 0 0.5rem;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.product-card .product-price {
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+/* Button in Product Card */
+.product-card button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 10px;
+    height: 500px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .button-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  li {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 60px;
+  }
+
+  .categories h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  body{
+    text-align: center;
+  }
+  .hero {
+    height: 400px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .product-card h2 {
+    font-size: 1rem;
+  }
+
+  .product-card p {
+    font-size: 0.9rem;
+  }
+
+  .product-card .product-price {
+    font-size: 1rem;
+  }
+}
