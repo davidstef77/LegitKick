@@ -6,7 +6,7 @@ import Clothing from "./pages/Clothing";
 import Accesories from "./pages/Accesories";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App() {  
+function App() {
   return (
     <Router>
       <Routes>
